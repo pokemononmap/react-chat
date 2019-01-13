@@ -36,6 +36,9 @@ app.post('/authenticate', (req, res) => {
   res.status(authData.status).send(authData.body)
 })
 
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("/build"));
+}
 
 const PORT = 3001
 app.listen(PORT, err => {
