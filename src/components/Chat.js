@@ -24,7 +24,7 @@ class Chat extends Component {
       instanceLocator: 'v1:us1:b1e9feac-0831-4538-92be-fa529339f77f',
       userId: this.props.username,
       tokenProvider: new Chatkit.TokenProvider({
-        url: 'https://monu11296-react-chat.herokuapp.com/:3001/authenticate',
+        url: 'http://localhost:3001/authenticate',
       }),
     });
 
