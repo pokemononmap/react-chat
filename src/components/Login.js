@@ -22,7 +22,7 @@ class Login extends Component {
   onSubmit = (e) => {
     this.setState({ loading: true });
     let username = this.state.username;
-    fetch('http://localhost:3001/users', {
+    fetch('https://monu11296api.herokuapp.com/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
